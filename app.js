@@ -1,4 +1,7 @@
-const QUESTIONS_URL = 'http://localhost:8080/questions/questions.json';
+const QUESTIONS_FILE='questions.json';
+const QUESTIONS_SAMPLE_FILE='questions-SAMPLE.json';
+const isTesting = new URLSearchParams(window.location.search).get('mode') === 'testing';
+const QUESTIONS_URL = `http://localhost:8080/questions/${isTesting ? QUESTIONS_SAMPLE_FILE : QUESTIONS_FILE}`;
 const IMAGES_BASE   = 'http://localhost:8080/questions/';
 const COUNTDOWN_SEC = 2;
 
