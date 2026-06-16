@@ -34,7 +34,7 @@ IMAGES = [
     ("question-3a", "capacitor electronic component circuit"),
     ("question-3b", "water condensation droplets glass"),
     # Q4: Spole
-    ("question-4a", "television remote control living room"),
+    ("question-4a", "remote control television"),
     ("question-4b", "inductor solenoid coil electrical"),
     # Q5: HTML
     ("question-5a", "web browser source code HTML"),
@@ -58,28 +58,28 @@ IMAGES = [
     ("question-11a", "hanafuda playing cards"),
     ("question-11b", "toy train railway locomotive"),
     # Q12: Disney
-    ("question-12a", "wizard sorcerer costume magic"),
+    ("question-12a", "magician stage performance"),
     ("question-12b", "animation cel cartoon drawing"),
     # Q13: sudo
     ("question-13a", "computer terminal error screen"),
-    ("question-13b", "Unix shell command terminal screen"),
+    ("question-13b", "Linux bash terminal"),
     # Q14: ls
     ("question-14a", "command line terminal prompt computer"),
-    ("question-14b", "neon light laser blue glow"),
+    ("question-14b", "neon sign glow light"),
     # Q15: cd
-    ("question-15a", "industrial robot humanoid automaton"),
-    ("question-15b", "filing cabinet folder documents"),
+    ("question-15a", "robot humanoid"),
+    ("question-15b", "manila folder office"),
     # Q16: rm
-    ("question-16a", "recycling bin wastepaper basket"),
+    ("question-16a", "garbage can trash"),
     ("question-16b", "army soldier military uniform"),
     # Q17: Quadcopter
     ("question-17a", "quadcopter drone four propellers aerial"),
-    ("question-17b", "multirotor unmanned aerial vehicle eight"),
+    ("question-17b", "hexacopter UAV multirotor"),
     # Q18: Drone loop
-    ("question-18a", "drone racing quadcopter sport"),
-    ("question-18b", "aerial photography landscape unmanned"),
+    ("question-18a", "drone race FPV"),
+    ("question-18b", "drone aerial landscape"),
     # Q19: Stack Overflow
-    ("question-19a", "computer programmer laptop typing"),
+    ("question-19a", "programmer typing keyboard"),
     ("question-19b", "source code programming screen"),
 ]
 
