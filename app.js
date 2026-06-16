@@ -1,8 +1,8 @@
 const QUESTIONS_FILE='questions.json';
 const QUESTIONS_SAMPLE_FILE='questions-SAMPLE.json';
 const isTesting = new URLSearchParams(window.location.search).get('mode') === 'testing';
-const QUESTIONS_URL = `http://localhost:8080/questions/${isTesting ? QUESTIONS_SAMPLE_FILE : QUESTIONS_FILE}`;
-const IMAGES_BASE   = 'http://localhost:8080/questions/';
+const QUESTIONS_URL = `questions/${isTesting ? QUESTIONS_SAMPLE_FILE : QUESTIONS_FILE}`;
+const IMAGES_BASE   = 'questions/';
 const COUNTDOWN_SEC = 2;
 
 let questions    = [];
@@ -77,8 +77,6 @@ function showFetchError(err) {
   const msg = document.getElementById('overlay-message');
   msg.innerHTML = `
     <span class="error-title">⚠ Kunne ikke hente spørgsmål</span>
-    Er Python-serveren startet?<br><br>
-    Kør: <code>python3 -m http.server 8080</code><br><br>
     <small style="color:#888">(${err.message})</small>
   `;
   showOverlay();
@@ -193,6 +191,7 @@ function startCountdown() {
         clearInterval(interval);
         number.textContent = '0';
         stopCountdownMusic();
+        document.getElementById('timer-bar').style.display = 'none';
         resolve();
         return;
       }
