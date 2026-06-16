@@ -1,6 +1,6 @@
 [
   {
-    "question": "Stå til venstre for A, højre for B! — Hvad er 2 + 2?",
+    "question": "Stil dig ved det svar du tror er rigtigt — Hvad er 2 + 2?",
     "a": {
       "answer": "5"
     },
@@ -10,7 +10,7 @@
     }
   },
   {
-    "question": "Hvad hedder den mest populære programmerings-hjælpeside?",
+    "question": "Hvad hed den programmerings-hjælpeside, der var meget populær i gamle dage (altså før 2023)?",
     "a": {
       "answer": "Stack Overflow",
       "correct": true

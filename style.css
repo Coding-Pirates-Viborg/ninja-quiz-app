@@ -38,12 +38,13 @@ body {
 }
 
 #question-text {
-  font-size: clamp(10px, 1.8vw, 18px);
+  font-size: clamp(12px, 2.2vw, 22px);
   line-height: 1.6;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--text);
   min-height: 1.6em;
+  padding: 8px 80px 10px;
 }
 
 #timer-bar {
@@ -119,7 +120,9 @@ body {
 }
 
 .answer-label {
-  position: relative;
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
   z-index: 1;
   font-size: clamp(60px, 10vw, 120px);
   color: var(--gold);
@@ -335,8 +338,8 @@ body {
   position: absolute;
   left: 16px;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
+  transform: translateY(-64%);
+  font-size: 56px;
   opacity: 0.5;
 }
 
@@ -345,7 +348,7 @@ body {
   position: absolute;
   right: 16px;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
+  transform: translateY(-64%);
+  font-size: 56px;
   opacity: 0.5;
 }
