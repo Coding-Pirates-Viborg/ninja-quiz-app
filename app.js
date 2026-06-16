@@ -163,6 +163,8 @@ function showQuestion(q) {
   const bgB = document.querySelector('#side-b .side-bg');
   bgA.style.backgroundImage = q.a.image ? `url('${IMAGES_BASE}${q.a.image}')` : '';
   bgB.style.backgroundImage = q.b.image ? `url('${IMAGES_BASE}${q.b.image}')` : '';
+  document.querySelector('#side-a .answer-text').classList.toggle('has-bg', !!q.a.image);
+  document.querySelector('#side-b .answer-text').classList.toggle('has-bg', !!q.b.image);
 }
 
 function startCountdown() {
