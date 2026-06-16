@@ -3,22 +3,12 @@
     "question": "Stil dig ved det svar du tror er rigtigt — Hvad er 2 + 2?",
     "a": {
       "answer": "5",
-      "image":"images/question-1a.jpeg"
+      "image":"images/SAMPLE-question-1a.jpeg"
     },
     "b": {
       "answer": "4",
       "correct": true,
       "funfact": "2 + 2 er altid 4 (med mindre du bruger ekstremt høje værdier for 2... 🤓)"
-    }
-  },
-  {
-    "question": "Hvad hed den programmerings-hjælpeside, der var meget populær i gamle dage (altså før 2023)?",
-    "a": {
-      "answer": "Stack Overflow",
-      "correct": true
-    },
-    "b": {
-      "answer": "Stack Underflow"
     }
   }
 ]
