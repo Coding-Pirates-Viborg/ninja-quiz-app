@@ -65,22 +65,22 @@ IMAGES = [
     ("question-13b", "Linux bash terminal"),
     # Q14: ls
     ("question-14a", "command line terminal prompt computer"),
-    ("question-14b", "neon sign glow light"),
+    ("question-14b", "neon light saber"),
     # Q15: cd
     ("question-15a", "robot humanoid"),
-    ("question-15b", "manila folder office"),
+    ("question-15b", "folder office icon"),
     # Q16: rm
     ("question-16a", "garbage can trash"),
     ("question-16b", "army soldier military uniform"),
     # Q17: Quadcopter
     ("question-17a", "quadcopter drone four propellers aerial"),
-    ("question-17b", "hexacopter UAV multirotor"),
+    ("question-17b", "drone multirotor"),
     # Q18: Drone loop
     ("question-18a", "drone race FPV"),
     ("question-18b", "drone aerial landscape"),
     # Q19: Stack Overflow
-    ("question-19a", "programmer typing keyboard"),
-    ("question-19b", "source code programming screen"),
+    ("question-19a", "programmer keyboard hacker"),
+    ("question-19b", "source code screen"),
 ]
 
 ALLOWED_MIME = {"image/jpeg", "image/png", "image/webp"}
