@@ -2,8 +2,7 @@
   {
     "question": "Stå til venstre for A, højre for B! — Hvad er 2 + 2?",
     "a": {
-      "answer": "5",
-      "image": "images/5.png"
+      "answer": "5"
     },
     "b": {
       "answer": "4",
@@ -13,11 +12,11 @@
   {
     "question": "Hvad hedder den mest populære programmerings-hjælpeside?",
     "a": {
-      "answer": "Stack Underflow"
-    },
-    "b": {
       "answer": "Stack Overflow",
       "correct": true
+    },
+    "b": {
+      "answer": "Stack Underflow"
     }
   }
 ]

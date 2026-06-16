@@ -65,13 +65,9 @@ body {
 }
 
 #timer-number {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 11px;
+  font-size: clamp(18px, 3vw, 30px);
   color: var(--text);
-  z-index: 1;
+  line-height: 1;
 }
 
 #timer-number.tick {
@@ -84,8 +80,8 @@ body {
 }
 
 @keyframes tick-pulse {
-  0%   { transform: translate(-50%, -50%) scale(1.5); color: #ff4444; }
-  100% { transform: translate(-50%, -50%) scale(1);   color: var(--text); }
+  0%   { transform: scale(1.5); color: #ff4444; }
+  100% { transform: scale(1);   color: var(--text); }
 }
 
 @keyframes blink {
@@ -135,7 +131,7 @@ body {
 .answer-text {
   position: relative;
   z-index: 1;
-  font-size: clamp(9px, 1.4vw, 15px);
+  font-size: clamp(13px, 2vw, 22px);
   line-height: 1.8;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -160,23 +156,40 @@ body {
 
 #sword {
   position: absolute;
-  top: -60px;
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 48px;
+  font-size: 96px;
   opacity: 0;
-  filter: drop-shadow(0 0 8px var(--gold));
+  filter: drop-shadow(0 0 12px var(--gold));
   z-index: 51;
   user-select: none;
 }
 
 #sword.dropping {
-  animation: sword-drop 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: sword-drop 2s cubic-bezier(0.3, 0.0, 0.7, 1.0) forwards;
 }
 
 @keyframes sword-drop {
-  0%   { top: -60px; opacity: 1; }
+  0%   { top: -120px; opacity: 1; }
   100% { top: 110vh;  opacity: 1; }
+}
+
+#timer-circle {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.9);
+  border: 3px solid var(--gold);
+  box-shadow: 0 0 15px var(--gold), inset 0 0 10px rgba(255, 215, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 55;
 }
 
 .divider-flash {
@@ -222,6 +235,21 @@ body {
 
 #overlay.hidden { display: none; }
 
+/* After elimination: nearly transparent so correct side stays visible */
+#overlay.next-prompt {
+  background: transparent;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+#overlay.next-prompt #overlay-message {
+  width: 100%;
+  padding: 20px 32px 170px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 60%, transparent 100%);
+  font-size: clamp(14px, 2.5vw, 26px);
+}
+
 #overlay-message {
   text-align: center;
   font-size: clamp(14px, 3vw, 32px);
@@ -266,6 +294,39 @@ body {
   color: #ffaaaa;
   line-height: 2.5;
   text-align: left;
+}
+
+/* ── SKULL ── */
+.skull-icon {
+  position: fixed;
+  /* span exactly the visible play area (below HUD) */
+  top: 80px;
+  bottom: 0;
+  width: 50%;
+  z-index: 60;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(80px, 15vw, 160px);
+  line-height: 1;
+  opacity: 0;
+  filter: drop-shadow(0 0 20px #ff2244) drop-shadow(0 0 40px #000);
+  pointer-events: none;
+  user-select: none;
+}
+
+#skull-a { left: 0; }
+#skull-b { left: 50%; }
+
+.skull-icon.hidden { display: none; }
+
+.skull-icon.visible {
+  display: flex;
+  animation: skull-appear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes skull-appear {
+  0%   { opacity: 0; transform: scale(0.2) rotate(-15deg); }
+  100% { opacity: 0.9; transform: scale(1) rotate(0deg); }
 }
 
 /* ── PIRAT DEKOR ── */
