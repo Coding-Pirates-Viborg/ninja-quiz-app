@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ninja Quiz — Coding Pirates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="arena">
+    <div id="side-a" class="side">
+      <div class="side-bg"></div>
+      <div class="answer-label">A</div>
+      <div class="answer-text"></div>
+    </div>
+
+    <div id="divider">
+      <div id="sword">⚔</div>
+    </div>
+
+    <div id="side-b" class="side">
+      <div class="side-bg"></div>
+      <div class="answer-label">B</div>
+      <div class="answer-text"></div>
+    </div>
+  </div>
+
+  <div id="hud">
+    <div id="question-text"></div>
+    <div id="timer-bar">
+      <div id="timer-fill"></div>
+      <div id="timer-number">10</div>
+    </div>
+  </div>
+
+  <div id="overlay" class="hidden">
+    <div id="overlay-message"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

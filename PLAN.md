@@ -1,4 +1,4 @@
-# Ninja Quiz — Implementeringsplan
+# Ninja Quiz App — Implementeringsplan
 
 ## Kontekst
 
