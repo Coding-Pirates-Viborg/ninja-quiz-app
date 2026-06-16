@@ -1,9 +1,11 @@
 const QUESTIONS_FILE='questions.json';
 const QUESTIONS_SAMPLE_FILE='questions-SAMPLE.json';
-const isTesting = new URLSearchParams(window.location.search).get('mode') === 'testing';
-const QUESTIONS_URL = `questions/${isTesting ? QUESTIONS_SAMPLE_FILE : QUESTIONS_FILE}`;
+const _params = new URLSearchParams(window.location.search);
+const isTesting = _params.get('mode') === 'testing';
+const useSample = _params.get('question') === 'sample';
+const QUESTIONS_URL = `questions/${useSample ? QUESTIONS_SAMPLE_FILE : QUESTIONS_FILE}`;
 const IMAGES_BASE   = 'questions/';
-const COUNTDOWN_SEC = 2;
+const COUNTDOWN_SEC = isTesting ? 2 : 15;
 
 let questions    = [];
 let currentIndex = 0;
