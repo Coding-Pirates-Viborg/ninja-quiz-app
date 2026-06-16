@@ -1,22 +1,92 @@
 [
   {
-    "question": "Stil dig ved det svar du tror er rigtigt — Hvad er 2 + 2?",
-    "a": {
-      "answer": "5"
-    },
-    "b": {
-      "answer": "4",
-      "correct": true
-    }
+    "question": "Hvor mange satellitter er der sendt i kredsløb om jorden?",
+    "a": { "answer": "2.500" },
+    "b": { "answer": "25.000", "correct": true }
   },
   {
-    "question": "Hvad hed den programmerings-hjælpeside, der var meget populær i gamle dage (altså før 2023)?",
-    "a": {
-      "answer": "Stack Overflow",
-      "correct": true
-    },
-    "b": {
-      "answer": "Stack Underflow"
-    }
+    "question": "Hvor mange af dem er Elon Musk's Starlink satellitter?",
+    "a": { "answer": "12.000", "correct": true },
+    "b": { "answer": "6.000" }
+  },
+  {
+    "question": "Hvad kan en kondensator?",
+    "a": { "answer": "Holde på en elektrisk ladning, som et lille batteri", "correct": true },
+    "b": { "answer": "Kondensere/samle damp i luften til vand" }
+  },
+  {
+    "question": "Hvad kan en spole?",
+    "a": { "answer": "Spole frem og tilbage i en film på Netflix" },
+    "b": { "answer": "Skabe et usynligt magnetfelt", "correct": true }
+  },
+  {
+    "question": "Hvilket \"sprog\" bruger man til at bygge selve indholdet på en hjemmeside, fx overskrifter og tekst?",
+    "a": { "answer": "HTML", "correct": true },
+    "b": { "answer": "Photoshop" }
+  },
+  {
+    "question": "Hvad hedder programmet, du bruger til at se hjemmesider i, fx Chrome eller Safari?",
+    "a": { "answer": "En browser", "correct": true },
+    "b": { "answer": "En søgemaskine" }
+  },
+  {
+    "question": "Hvad er en \"NPC\" i et spil?",
+    "a": { "answer": "New Player Card" },
+    "b": { "answer": "Non-Player Character", "correct": true }
+  },
+  {
+    "question": "Hvad betyder \"FPS\" i spil?",
+    "a": { "answer": "Frames Per Second", "correct": true },
+    "b": { "answer": "Free Play System" }
+  },
+  {
+    "question": "Super Marios gode ven Toad — hvad er han?",
+    "a": { "answer": "En skildpaddemand" },
+    "b": { "answer": "En svampemand", "correct": true }
+  },
+  {
+    "question": "Hvilken superhelt blev \"opfundet\" som antifascistisk propaganda?",
+    "a": { "answer": "Captain America", "correct": true },
+    "b": { "answer": "Ironing Woman" }
+  },
+  {
+    "question": "Hvad lavede Nintendo da firmaet startede?",
+    "a": { "answer": "Spillekort", "correct": true },
+    "b": { "answer": "Legetøjstog" }
+  },
+  {
+    "question": "Hvad hed Disney's første film?",
+    "a": { "answer": "Fantasia" },
+    "b": { "answer": "Steamboat Willie (1928)", "correct": true }
+  },
+  {
+    "question": "Hvad står kommandoen sudo for i Linux og RetroPie?",
+    "a": { "answer": "Stack Underflow Diagnosis Output" },
+    "b": { "answer": "Superuser Do", "correct": true }
+  },
+  {
+    "question": "Hvad står kommandoen ls for?",
+    "a": { "answer": "List", "correct": true },
+    "b": { "answer": "Light Saber" }
+  },
+  {
+    "question": "Hvad står kommandoen cd for?",
+    "a": { "answer": "CyberDyne Systems" },
+    "b": { "answer": "Change Directory", "correct": true }
+  },
+  {
+    "question": "Hvad står kommandoen rm for?",
+    "a": { "answer": "Remove", "correct": true },
+    "b": { "answer": "Republic Military" }
+  },
+  {
+    "question": "Hvor mange propeller er der på en quadcopter?",
+    "a": { "answer": "4" },
+    "b": { "answer": "8", "correct": true }
+  },
+  {
+    "question": "Kan en drone lave et loop?",
+    "a": { "answer": "Jaaa..., hvis den er bygget til det", "correct": true },
+    "b": { "answer": "Nej, aldrig" }
   }
 ]
