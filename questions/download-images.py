@@ -34,17 +34,17 @@ IMAGES = [
     ("question-3a", "capacitor electronic component circuit"),
     ("question-3b", "water condensation droplets glass"),
     # Q4: Spole
-    ("question-4a", "television streaming remote control sofa"),
-    ("question-4b", "copper coil electromagnet wire"),
+    ("question-4a", "television remote control living room"),
+    ("question-4b", "inductor solenoid coil electrical"),
     # Q5: HTML
-    ("question-5a", "HTML code programming web development"),
+    ("question-5a", "web browser source code HTML"),
     ("question-5b", "graphic design digital art creative"),
     # Q6: Browser
     ("question-6a", "web browser laptop internet"),
     ("question-6b", "search engine results internet"),
     # Q7: NPC
     ("question-7a", "playing cards poker deck"),
-    ("question-7b", "video game character rpg pixel art"),
+    ("question-7b", "video game screenshot role-playing"),
     # Q8: FPS
     ("question-8a", "gaming monitor esport computer"),
     ("question-8b", "children playing outdoor playground"),
@@ -52,35 +52,35 @@ IMAGES = [
     ("question-9a", "turtle tortoise reptile animal"),
     ("question-9b", "mushroom toadstool forest fungi"),
     # Q10: Captain America
-    ("question-10a", "superhero comic book hero shield"),
-    ("question-10b", "ironing clothes iron board laundry"),
+    ("question-10a", "comic book superhero cosplay"),
+    ("question-10b", "clothes iron ironing board"),
     # Q11: Nintendo
-    ("question-11a", "hanafuda Japanese playing cards traditional"),
+    ("question-11a", "hanafuda playing cards"),
     ("question-11b", "toy train railway locomotive"),
     # Q12: Disney
-    ("question-12a", "fantasy sorcerer magic wand"),
-    ("question-12b", "vintage cartoon retro animation"),
+    ("question-12a", "wizard sorcerer costume magic"),
+    ("question-12b", "animation cel cartoon drawing"),
     # Q13: sudo
     ("question-13a", "computer terminal error screen"),
-    ("question-13b", "Linux terminal command line shell"),
+    ("question-13b", "Unix shell command terminal screen"),
     # Q14: ls
-    ("question-14a", "terminal file list command prompt"),
-    ("question-14b", "blue neon light sword glowing"),
+    ("question-14a", "command line terminal prompt computer"),
+    ("question-14b", "neon light laser blue glow"),
     # Q15: cd
-    ("question-15a", "robot cyborg futuristic machine"),
-    ("question-15b", "file folder directory organize"),
+    ("question-15a", "industrial robot humanoid automaton"),
+    ("question-15b", "filing cabinet folder documents"),
     # Q16: rm
-    ("question-16a", "trash bin delete recycle waste"),
+    ("question-16a", "recycling bin wastepaper basket"),
     ("question-16b", "army soldier military uniform"),
     # Q17: Quadcopter
     ("question-17a", "quadcopter drone four propellers aerial"),
-    ("question-17b", "octocopter drone eight rotors"),
+    ("question-17b", "multirotor unmanned aerial vehicle eight"),
     # Q18: Drone loop
-    ("question-18a", "racing drone FPV speed acrobatic"),
-    ("question-18b", "aerial photography drone landscape calm"),
+    ("question-18a", "drone racing quadcopter sport"),
+    ("question-18b", "aerial photography landscape unmanned"),
     # Q19: Stack Overflow
-    ("question-19a", "programmer coding laptop developer"),
-    ("question-19b", "code error debug computer screen"),
+    ("question-19a", "computer programmer laptop typing"),
+    ("question-19b", "source code programming screen"),
 ]
 
 ALLOWED_MIME = {"image/jpeg", "image/png", "image/webp"}
