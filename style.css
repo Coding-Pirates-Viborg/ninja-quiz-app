@@ -299,6 +299,35 @@ body {
   text-align: left;
 }
 
+/* ── FUNFACT ── */
+.funfact-text {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(9px, 1.3vw, 13px);
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 12px 20px;
+  color: var(--gold);
+  max-width: 85%;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.funfact-text.hidden { display: none; }
+
+.funfact-text.visible {
+  display: block;
+  animation: funfact-appear 0.6s ease-out 0.2s forwards;
+}
+
+@keyframes funfact-appear {
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 /* ── SKULL ── */
 .skull-icon {
   position: fixed;

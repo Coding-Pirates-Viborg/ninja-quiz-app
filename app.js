@@ -238,11 +238,18 @@ function showElimination(q) {
   document.getElementById(`side-${wrongSide}`).classList.add('eliminated');
   document.getElementById(`side-${correctSide}`).classList.add('correct');
 
-  // show skull after elimination shake animation finishes (~800ms)
   setTimeout(() => {
     const skull = document.getElementById(`skull-${wrongSide}`);
     skull.classList.remove('hidden');
     skull.classList.add('visible');
+
+    const funfact = q[correctSide]?.funfact;
+    if (funfact) {
+      const el = document.querySelector(`#side-${correctSide} .funfact-text`);
+      el.textContent = `💡 ${funfact}`;
+      el.classList.remove('hidden');
+      el.classList.add('visible');
+    }
   }, 850);
 }
 
@@ -434,6 +441,10 @@ function resetSides() {
     const skull = document.getElementById(`skull-${s}`);
     skull.classList.add('hidden');
     skull.classList.remove('visible');
+    const funfact = el.querySelector('.funfact-text');
+    funfact.textContent = '';
+    funfact.classList.add('hidden');
+    funfact.classList.remove('visible');
   });
   const sword = document.getElementById('sword');
   sword.classList.remove('dropping');

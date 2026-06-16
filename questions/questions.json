@@ -2,91 +2,109 @@
   {
     "question": "Hvor mange satellitter er der sendt i kredsløb om jorden?",
     "a": { "answer": "2.500" },
-    "b": { "answer": "25.000", "correct": true }
+    "b": { "answer": "25.000", "correct": true,
+           "funfact": "Over 25.000 objekter er registreret i kredsløb — mange er gamle satellitter og affald." }
   },
   {
     "question": "Hvor mange af dem er Elon Musk's Starlink satellitter?",
-    "a": { "answer": "12.000", "correct": true },
+    "a": { "answer": "12.000", "correct": true,
+           "funfact": "SpaceX har tilladelse til op til 42.000 Starlink-satellitter — de udgør allerede mere end halvdelen af alle aktive satellitter." },
     "b": { "answer": "6.000" }
   },
   {
     "question": "Hvad kan en kondensator?",
-    "a": { "answer": "Holde på en elektrisk ladning, som et lille batteri", "correct": true },
+    "a": { "answer": "Holde på en elektrisk ladning, som et lille batteri", "correct": true,
+           "funfact": "En kondensator kan aflade sig på få millisekunder — meget hurtigere end et batteri. Det bruges bl.a. i kameraers blitz." },
     "b": { "answer": "Kondensere/samle damp i luften til vand" }
   },
   {
     "question": "Hvad kan en spole?",
     "a": { "answer": "Spole frem og tilbage i en film på Netflix" },
-    "b": { "answer": "Skabe et usynligt magnetfelt", "correct": true }
+    "b": { "answer": "Skabe et usynligt magnetfelt", "correct": true,
+           "funfact": "Spoler bruges i motorer, højttalere og trådløs opladning — alle steder hvor elektricitet og magnetisme arbejder sammen." }
   },
   {
     "question": "Hvilket \"sprog\" bruger man til at bygge selve indholdet på en hjemmeside, fx overskrifter og tekst?",
-    "a": { "answer": "HTML", "correct": true },
+    "a": { "answer": "HTML", "correct": true,
+           "funfact": "HTML står for HyperText Markup Language og blev opfundet af Tim Berners-Lee i 1991." },
     "b": { "answer": "Photoshop" }
   },
   {
     "question": "Hvad hedder programmet, du bruger til at se hjemmesider i, fx Chrome eller Safari?",
-    "a": { "answer": "En browser", "correct": true },
+    "a": { "answer": "En browser", "correct": true,
+           "funfact": "Den første grafiske browser hed Mosaic og kom i 1993. Den gjorde internettet tilgængeligt for alle." },
     "b": { "answer": "En søgemaskine" }
   },
   {
     "question": "Hvad er en \"NPC\" i et spil?",
     "a": { "answer": "New Player Card" },
-    "b": { "answer": "Non-Player Character", "correct": true }
+    "b": { "answer": "Non-Player Character", "correct": true,
+           "funfact": "NPC'er styres af computeren. I moderne spil kan de have tusindvis af dialoglinjer og reagere på spillerens valg." }
   },
   {
     "question": "Hvad betyder \"FPS\" i spil?",
-    "a": { "answer": "Frames Per Second", "correct": true },
+    "a": { "answer": "Frames Per Second", "correct": true,
+           "funfact": "Det menneskelige øje kan se flimmer op til ca. 60 FPS. Mange gamere foretrækker 144 FPS for flydende bevægelse." },
     "b": { "answer": "Free Play System" }
   },
   {
     "question": "Super Marios gode ven Toad — hvad er han?",
     "a": { "answer": "En skildpaddemand" },
-    "b": { "answer": "En svampemand", "correct": true }
+    "b": { "answer": "En svampemand", "correct": true,
+           "funfact": "Toads art hedder \"Mushroom People\". Han debuterede i Super Mario Bros. i 1985 og er faktisk kongens livvagt." }
   },
   {
     "question": "Hvilken superhelt blev \"opfundet\" som antifascistisk propaganda?",
-    "a": { "answer": "Captain America", "correct": true },
+    "a": { "answer": "Captain America", "correct": true,
+           "funfact": "Captain America debuterede i marts 1941 — 9 måneder før USA officielt gik ind i 2. verdenskrig. Forsiden viste ham slå Hitler." },
     "b": { "answer": "Ironing Woman" }
   },
   {
     "question": "Hvad lavede Nintendo da firmaet startede?",
-    "a": { "answer": "Spillekort", "correct": true },
+    "a": { "answer": "Spillekort", "correct": true,
+           "funfact": "Nintendo blev grundlagt i 1889 og lavede håndlavede hanafuda-spillekort. De prøvede også taxaer og hoteller før de fandt spil." },
     "b": { "answer": "Legetøjstog" }
   },
   {
     "question": "Hvad hed Disney's første film?",
     "a": { "answer": "Fantasia" },
-    "b": { "answer": "Steamboat Willie (1928)", "correct": true }
+    "b": { "answer": "Steamboat Willie (1928)", "correct": true,
+           "funfact": "Steamboat Willie var den første tegnefilm med synkroniseret lyd. Mickey Mouse og Minnie Mouse debuterede begge i den." }
   },
   {
     "question": "Hvad står kommandoen sudo for i Linux og RetroPie?",
     "a": { "answer": "Stack Underflow Diagnosis Output" },
-    "b": { "answer": "Superuser Do", "correct": true }
+    "b": { "answer": "Superuser Do", "correct": true,
+           "funfact": "sudo giver dig midlertidige admin-rettigheder. Misbruger du dem kan du slette hele styresystemet med én kommando!" }
   },
   {
     "question": "Hvad står kommandoen ls for?",
-    "a": { "answer": "List", "correct": true },
+    "a": { "answer": "List", "correct": true,
+           "funfact": "ls viser alle filer i en mappe. ls -la viser også skjulte filer og hvem der ejer dem." },
     "b": { "answer": "Light Saber" }
   },
   {
     "question": "Hvad står kommandoen cd for?",
     "a": { "answer": "CyberDyne Systems" },
-    "b": { "answer": "Change Directory", "correct": true }
+    "b": { "answer": "Change Directory", "correct": true,
+           "funfact": "cd .. går én mappe op. cd ~ sender dig direkte hjem til din hjemmemappe uanset hvor du er." }
   },
   {
     "question": "Hvad står kommandoen rm for?",
-    "a": { "answer": "Remove", "correct": true },
+    "a": { "answer": "Remove", "correct": true,
+           "funfact": "rm sletter filer permanent — ingen papirkurv! rm -rf sletter hele mapper og spørger ikke om lov." },
     "b": { "answer": "Republic Military" }
   },
   {
     "question": "Hvor mange propeller er der på en quadcopter?",
-    "a": { "answer": "4" },
-    "b": { "answer": "8", "correct": true }
+    "a": { "answer": "4", "correct": true,
+           "funfact": "Quad betyder 4 — én propel per arm. To drejer med uret og to mod uret for at holde dronen stabil." },
+    "b": { "answer": "8" }
   },
   {
     "question": "Kan en drone lave et loop?",
-    "a": { "answer": "Jaaa..., hvis den er bygget til det", "correct": true },
+    "a": { "answer": "Jaaa..., hvis den er bygget til det", "correct": true,
+           "funfact": "Racing-droner med \"acro mode\" kan lave loops og ruller. Normale foto-droner er stabiliseret og kan ikke." },
     "b": { "answer": "Nej, aldrig" }
   }
 ]
