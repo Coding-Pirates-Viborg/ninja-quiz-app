@@ -2,12 +2,14 @@
   {
     "question": "Hvor mange satellitter er der sendt i kredsløb om jorden?",
     "a": {
-      "answer": "2.500"
+      "answer": "2.500",
+      "image": "images/question-1a.jpeg"
     },
     "b": {
       "answer": "25.000",
       "correct": true,
-      "funfact": "Over 25.000 objekter er registreret i kredsløb — mange er gamle satellitter og affald."
+      "funfact": "Over 25.000 objekter er registreret i kredsløb — mange er gamle satellitter og affald.",
+      "image": "images/question-1b.jpeg"
     }
   },
   {
@@ -15,10 +17,12 @@
     "a": {
       "answer": "12.000",
       "correct": true,
-      "funfact": "SpaceX har tilladelse til op til 42.000 Starlink-satellitter — de udgør allerede mere end halvdelen af alle aktive satellitter."
+      "funfact": "SpaceX har tilladelse til op til 42.000 Starlink-satellitter — de udgør allerede mere end halvdelen af alle aktive satellitter.",
+      "image": "images/question-2a.jpeg"
     },
     "b": {
-      "answer": "6.000"
+      "answer": "6.000",
+      "image": "images/question-2b.jpeg"
     }
   },
   {
