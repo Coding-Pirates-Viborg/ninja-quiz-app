@@ -4,7 +4,10 @@
     "question": "Stil dig ved det svar du tror er rigtigt — Hvad er 2 + 2?",
     "a": {
       "answer": "5",
-      "image":"images/SAMPLE-question-1a.jpeg"
+      "image": {
+        "searchKeywords": "number five math",
+        "path": "images/SAMPLE-question-1a.jpeg"
+      }
     },
     "b": {
       "answer": "4",

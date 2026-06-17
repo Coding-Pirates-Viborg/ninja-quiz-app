@@ -4,13 +4,13 @@ export async function validateImages(qs, imagesBase = 'questions/') {
     const q = qs[i];
     const n = `Spørgsmål ${i + 1}`;
     for (const side of ['a', 'b']) {
-      if (q[side]?.image) {
-        const url = `${imagesBase}${q[side].image}`;
+      if (q[side]?.image?.path) {
+        const url = `${imagesBase}${q[side].image.path}`;
         try {
           const res = await fetch(url, { method: 'HEAD' });
-          if (!res.ok) errors.push(`${n} - svar ${side.toUpperCase()}: billedet "${q[side].image}" blev ikke fundet`);
+          if (!res.ok) errors.push(`${n} - svar ${side.toUpperCase()}: billedet "${q[side].image.path}" blev ikke fundet`);
         } catch {
-          errors.push(`${n} - svar ${side.toUpperCase()}: kunne ikke tjekke billedet "${q[side].image}"`);
+          errors.push(`${n} - svar ${side.toUpperCase()}: kunne ikke tjekke billedet "${q[side].image.path}"`);
         }
       }
     }

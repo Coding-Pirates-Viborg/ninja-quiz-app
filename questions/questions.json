@@ -4,13 +4,19 @@
     "question": "Hvor mange satellitter er der sendt i kredsløb om jorden?",
     "a": {
       "answer": "2.500",
-      "image": "images/question-1a.jpeg"
+      "image": {
+        "searchKeywords": "satellite orbit earth space",
+        "path": "images/question-1a.jpeg"
+      }
     },
     "b": {
       "answer": "25.000",
       "correct": true,
       "funfact": "Over 25.000 objekter er registreret i kredsløb — mange er gamle satellitter og affald (der er ca. 12.000 aktive).",
-      "image": "images/question-1b.jpeg"
+      "image": {
+        "searchKeywords": "satellite constellation space debris orbit",
+        "path": "images/question-1b.jpeg"
+      }
     }
   },
   {
@@ -20,11 +26,17 @@
       "answer": "12.000",
       "correct": true,
       "funfact": "Ca. 10.000 aktive. SpaceX har tilladelse til op til 42.000 Starlink-satellitter.",
-      "image": "images/question-2a.jpeg"
+      "image": {
+        "searchKeywords": "Starlink satellite train night sky",
+        "path": "images/question-2a.jpeg"
+      }
     },
     "b": {
       "answer": "6.000",
-      "image": "images/question-2b.jpeg"
+      "image": {
+        "searchKeywords": "SpaceX Falcon 9 rocket launch",
+        "path": "images/question-2b.jpeg"
+      }
     }
   },
   {
@@ -34,11 +46,17 @@
       "answer": "Holde på en elektrisk ladning, som et lille batteri",
       "correct": true,
       "funfact": "En kondensator kan aflade sig på få millisekunder — meget hurtigere end et batteri. Det bruges bl.a. i kameraers blitz.",
-      "image": "images/question-3a.jpeg"
+      "image": {
+        "searchKeywords": "capacitor electronic component circuit",
+        "path": "images/question-3a.jpeg"
+      }
     },
     "b": {
       "answer": "Kondensere/samle damp i luften til vand",
-      "image": "images/question-3b.jpeg"
+      "image": {
+        "searchKeywords": "water condensation droplets glass",
+        "path": "images/question-3b.jpeg"
+      }
     }
   },
   {
@@ -46,13 +64,19 @@
     "question": "Hvad kan en spole?",
     "a": {
       "answer": "Spole frem og tilbage i en film på Netflix",
-      "image": "images/question-4a.jpeg"
+      "image": {
+        "searchKeywords": "remote control television",
+        "path": "images/question-4a.jpeg"
+      }
     },
     "b": {
       "answer": "Skabe et usynligt magnetfelt",
       "correct": true,
       "funfact": "Spoler bruges i motorer, højttalere og trådløs opladning — alle steder hvor elektricitet og magnetisme arbejder sammen.",
-      "image": "images/question-4b.jpeg"
+      "image": {
+        "searchKeywords": "inductor solenoid coil electrical",
+        "path": "images/question-4b.jpeg"
+      }
     }
   },
   {
@@ -62,11 +86,17 @@
       "answer": "HTML",
       "correct": true,
       "funfact": "HTML står for HyperText Markup Language og blev opfundet af Tim Berners-Lee i 1991.",
-      "image": "images/question-5a.jpeg"
+      "image": {
+        "searchKeywords": "web browser source code HTML",
+        "path": "images/question-5a.jpeg"
+      }
     },
     "b": {
       "answer": "Photoshop",
-      "image": "images/question-5b.jpeg"
+      "image": {
+        "searchKeywords": "graphic design digital art creative",
+        "path": "images/question-5b.jpeg"
+      }
     }
   },
   {
@@ -76,11 +106,17 @@
       "answer": "En browser",
       "correct": true,
       "funfact": "Den første grafiske browser hed Mosaic og kom i 1993. Den gjorde internettet tilgængeligt for alle.",
-      "image": "images/question-6a.jpeg"
+      "image": {
+        "searchKeywords": "web browser laptop internet",
+        "path": "images/question-6a.jpeg"
+      }
     },
     "b": {
       "answer": "En søgemaskine",
-      "image": "images/question-6b.jpeg"
+      "image": {
+        "searchKeywords": "search engine results internet",
+        "path": "images/question-6b.jpeg"
+      }
     }
   },
   {
@@ -88,13 +124,19 @@
     "question": "Hvad er en \"NPC\" i et spil?",
     "a": {
       "answer": "New Player Card",
-      "image": "images/question-7a.jpeg"
+      "image": {
+        "searchKeywords": "playing cards poker deck",
+        "path": "images/question-7a.jpeg"
+      }
     },
     "b": {
       "answer": "Non-Player Character",
       "correct": true,
       "funfact": "NPC'er styres af computeren. I moderne spil kan de have tusindvis af dialoglinjer og reagere på spillerens valg.",
-      "image": "images/question-7b.jpeg"
+      "image": {
+        "searchKeywords": "video game screenshot role-playing",
+        "path": "images/question-7b.jpeg"
+      }
     }
   },
   {
@@ -104,11 +146,17 @@
       "answer": "Frames Per Second",
       "correct": true,
       "funfact": "Det menneskelige øje kan se flimmer op til ca. 60 FPS. Mange gamere foretrækker 144 FPS for flydende bevægelse.",
-      "image": "images/question-8a.jpeg"
+      "image": {
+        "searchKeywords": "gaming monitor esport computer",
+        "path": "images/question-8a.jpeg"
+      }
     },
     "b": {
       "answer": "Free Play System",
-      "image": "images/question-8b.jpeg"
+      "image": {
+        "searchKeywords": "children playing outdoor playground",
+        "path": "images/question-8b.jpeg"
+      }
     }
   },
   {
@@ -116,13 +164,19 @@
     "question": "Super Marios gode ven Toad — hvad er han?",
     "a": {
       "answer": "En skildpaddemand",
-      "image": "images/question-9a.jpeg"
+      "image": {
+        "searchKeywords": "turtle tortoise reptile animal",
+        "path": "images/question-9a.jpeg"
+      }
     },
     "b": {
       "answer": "En svampemand",
       "correct": true,
       "funfact": "Toads art hedder \"Mushroom People\". Han debuterede i Super Mario Bros. i 1985 og er faktisk kongens livvagt.",
-      "image": "images/question-9b.jpeg"
+      "image": {
+        "searchKeywords": "mushroom toadstool forest fungi",
+        "path": "images/question-9b.jpeg"
+      }
     }
   },
   {
@@ -132,11 +186,17 @@
       "answer": "Captain America",
       "correct": true,
       "funfact": "Captain America debuterede i marts 1941 — 9 måneder før USA officielt gik ind i 2. verdenskrig. Forsiden viste ham slå Hitler.",
-      "image": "images/question-10a.jpeg"
+      "image": {
+        "searchKeywords": "comic book superhero cosplay",
+        "path": "images/question-10a.jpeg"
+      }
     },
     "b": {
       "answer": "Ironing Woman",
-      "image": "images/question-10b.jpeg"
+      "image": {
+        "searchKeywords": "clothes iron ironing board",
+        "path": "images/question-10b.jpeg"
+      }
     }
   },
   {
@@ -146,11 +206,17 @@
       "answer": "Spillekort",
       "correct": true,
       "funfact": "Nintendo blev grundlagt i 1889 og lavede håndlavede hanafuda-spillekort. De prøvede også taxaer og hoteller før de fandt spil.",
-      "image": "images/question-11a.jpeg"
+      "image": {
+        "searchKeywords": "hanafuda playing cards",
+        "path": "images/question-11a.jpeg"
+      }
     },
     "b": {
       "answer": "Legetøjstog",
-      "image": "images/question-11b.jpeg"
+      "image": {
+        "searchKeywords": "toy train railway locomotive",
+        "path": "images/question-11b.jpeg"
+      }
     }
   },
   {
@@ -158,13 +224,19 @@
     "question": "Hvad hed Disney's første film?",
     "a": {
       "answer": "Fantasia",
-      "image": "images/question-12a.jpeg"
+      "image": {
+        "searchKeywords": "magician stage performance",
+        "path": "images/question-12a.jpeg"
+      }
     },
     "b": {
       "answer": "Steamboat Willie",
       "correct": true,
       "funfact": "Steamboat Willie fra 1928 var den første tegnefilm med synkroniseret lyd. Han blev senere bedre kendt som Mickey Mouse.",
-      "image": "images/question-12b.jpeg"
+      "image": {
+        "searchKeywords": "animation cel cartoon drawing",
+        "path": "images/question-12b.jpeg"
+      }
     }
   },
   {
@@ -172,13 +244,19 @@
     "question": "Hvad står kommandoen sudo for i Linux og RetroPie?",
     "a": {
       "answer": "Stack Underflow Diagnosis Output",
-      "image": "images/question-13a.jpeg"
+      "image": {
+        "searchKeywords": "computer terminal error screen",
+        "path": "images/question-13a.jpeg"
+      }
     },
     "b": {
       "answer": "Superuser Do",
       "correct": true,
       "funfact": "sudo giver dig midlertidige admin-rettigheder. Misbruger du dem kan du slette hele styresystemet med én kommando!",
-      "image": "images/question-13b.jpeg"
+      "image": {
+        "searchKeywords": "Linux bash terminal",
+        "path": "images/question-13b.jpeg"
+      }
     }
   },
   {
@@ -188,11 +266,17 @@
       "answer": "List",
       "correct": true,
       "funfact": "ls viser alle filer i en mappe. ls -la viser også skjulte filer og hvem der ejer dem.",
-      "image": "images/question-14a.jpeg"
+      "image": {
+        "searchKeywords": "command line terminal prompt computer",
+        "path": "images/question-14a.jpeg"
+      }
     },
     "b": {
       "answer": "Light Saber",
-      "image": "images/question-14b.jpeg"
+      "image": {
+        "searchKeywords": "neon light saber",
+        "path": "images/question-14b.jpeg"
+      }
     }
   },
   {
@@ -200,13 +284,19 @@
     "question": "Hvad står kommandoen cd for?",
     "a": {
       "answer": "CyberDyne Systems",
-      "image": "images/question-15a.jpeg"
+      "image": {
+        "searchKeywords": "robot humanoid",
+        "path": "images/question-15a.jpeg"
+      }
     },
     "b": {
       "answer": "Change Directory",
       "correct": true,
       "funfact": "cd .. går én mappe op. cd ~ sender dig direkte hjem til din hjemmemappe uanset hvor du er.",
-      "image": "images/question-15b.jpeg"
+      "image": {
+        "searchKeywords": "folder office icon",
+        "path": "images/question-15b.jpeg"
+      }
     }
   },
   {
@@ -216,11 +306,17 @@
       "answer": "Remove",
       "correct": true,
       "funfact": "rm sletter filer permanent — ingen papirkurv! rm -rf sletter hele mapper og spørger ikke om lov.",
-      "image": "images/question-16a.jpeg"
+      "image": {
+        "searchKeywords": "garbage can trash",
+        "path": "images/question-16a.jpeg"
+      }
     },
     "b": {
       "answer": "Republic Military",
-      "image": "images/question-16b.jpeg"
+      "image": {
+        "searchKeywords": "army soldier military uniform",
+        "path": "images/question-16b.jpeg"
+      }
     }
   },
   {
@@ -230,11 +326,17 @@
       "answer": "4",
       "correct": true,
       "funfact": "Quad betyder 4 — én propel per arm. To drejer med uret og to mod uret for at holde dronen stabil.",
-      "image": "images/question-17a.jpeg"
+      "image": {
+        "searchKeywords": "quadcopter drone four propellers aerial",
+        "path": "images/question-17a.jpeg"
+      }
     },
     "b": {
       "answer": "8",
-      "image": "images/question-17b.jpeg"
+      "image": {
+        "searchKeywords": "drone multirotor",
+        "path": "images/question-17b.jpeg"
+      }
     }
   },
   {
@@ -244,11 +346,17 @@
       "answer": "Jaaa..., hvis den er bygget til det",
       "correct": true,
       "funfact": "Racing-droner med \"acro mode\" kan lave loops og ruller. Normale foto-droner er stabiliseret og kan ikke.",
-      "image": "images/question-18a.jpeg"
+      "image": {
+        "searchKeywords": "drone race FPV",
+        "path": "images/question-18a.jpeg"
+      }
     },
     "b": {
       "answer": "Nej, aldrig",
-      "image": "images/question-18b.jpeg"
+      "image": {
+        "searchKeywords": "drone aerial landscape",
+        "path": "images/question-18b.jpeg"
+      }
     }
   },
   {
@@ -258,11 +366,17 @@
       "answer": "Stack Overflow",
       "correct": true,
       "funfact": "Der var engang i gamle dage - før ChatGPT og AI...",
-      "image": "images/question-19a.jpeg"
+      "image": {
+        "searchKeywords": "programmer keyboard hacker",
+        "path": "images/question-19a.jpeg"
+      }
     },
     "b": {
       "answer": "Stack Underflow",
-      "image": "images/question-19b.jpeg"
+      "image": {
+        "searchKeywords": "source code screen",
+        "path": "images/question-19b.jpeg"
+      }
     }
   }
 ]

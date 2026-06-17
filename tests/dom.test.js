@@ -41,7 +41,7 @@ describe('showQuestion', () => {
   });
 
   it('sets background image when provided', () => {
-    showQuestion({ question: 'Q?', a: { answer: 'A', image: 'images/test.jpg' }, b: { answer: 'B' } });
+    showQuestion({ question: 'Q?', a: { answer: 'A', image: { path: 'images/test.jpg', searchKeywords: 'test' } }, b: { answer: 'B' } });
     expect(document.querySelector('#side-a .side-bg').style.backgroundImage).toContain('images/test.jpg');
   });
 
@@ -52,7 +52,7 @@ describe('showQuestion', () => {
   });
 
   it('adds has-bg class when image is present', () => {
-    showQuestion({ question: 'Q?', a: { answer: 'A', image: 'img/a.jpg' }, b: { answer: 'B' } });
+    showQuestion({ question: 'Q?', a: { answer: 'A', image: { path: 'img/a.jpg', searchKeywords: 'test' } }, b: { answer: 'B' } });
     expect(document.querySelector('#side-a .answer-text').classList.contains('has-bg')).toBe(true);
     expect(document.querySelector('#side-b .answer-text').classList.contains('has-bg')).toBe(false);
   });

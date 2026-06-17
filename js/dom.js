@@ -6,10 +6,10 @@ export function showQuestion(q, imagesBase = 'questions/') {
 
   const bgA = document.querySelector('#side-a .side-bg');
   const bgB = document.querySelector('#side-b .side-bg');
-  bgA.style.backgroundImage = q.a.image ? `url('${imagesBase}${q.a.image}')` : '';
-  bgB.style.backgroundImage = q.b.image ? `url('${imagesBase}${q.b.image}')` : '';
-  document.querySelector('#side-a .answer-text').classList.toggle('has-bg', !!q.a.image);
-  document.querySelector('#side-b .answer-text').classList.toggle('has-bg', !!q.b.image);
+  bgA.style.backgroundImage = q.a.image?.path ? `url('${imagesBase}${q.a.image.path}')` : '';
+  bgB.style.backgroundImage = q.b.image?.path ? `url('${imagesBase}${q.b.image.path}')` : '';
+  document.querySelector('#side-a .answer-text').classList.toggle('has-bg', !!q.a.image?.path);
+  document.querySelector('#side-b .answer-text').classList.toggle('has-bg', !!q.b.image?.path);
 }
 
 export function showElimination(q) {
