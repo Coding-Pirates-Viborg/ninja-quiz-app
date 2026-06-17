@@ -28,6 +28,11 @@ export function validateQuestions(qs) {
     const correctCount = [q.a?.correct, q.b?.correct].filter(Boolean).length;
     if (correctCount === 0) errors.push(`${n}: intet svar er markeret som korrekt`);
     if (correctCount > 1)   errors.push(`${n}: begge svar er markeret som korrekte`);
+    if (q.questionNo === undefined) {
+      errors.push(`${n}: mangler questionNo`);
+    } else if (!Number.isInteger(q.questionNo) || q.questionNo !== i + 1) {
+      errors.push(`${n}: questionNo skal være ${i + 1}, men er ${q.questionNo}`);
+    }
   });
   return errors;
 }

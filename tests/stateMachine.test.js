@@ -27,6 +27,7 @@ const HTML = `
 `;
 
 const SAMPLE_QUESTION = {
+  questionNo: 1,
   question: 'Hvad er 2 + 2?',
   a: { answer: '5' },
   b: { answer: '4', correct: true, funfact: 'Det er altid 4!' },

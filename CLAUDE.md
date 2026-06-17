@@ -33,6 +33,10 @@ Single-page vanilla JS app with no build step, no framework, no dependencies.
 - `index.html` — layout with two side panels (A/B), sword/divider overlay, timer bar, and a central overlay for state messages
 - `app.js` — all game logic as a state machine with states: `IDLE → INTRO → QUESTION → COUNTDOWN → WAIT_FOR_MASTER → REVEAL → ELIMINATION → NEXT → WINNER`
 - `style.css` — all styling and animations (sword drop, elimination flash, skull reveal, funfact fade-in)
+- `js/audio.js` — Web Audio API synthesis (countdown music, siren); exports `ensureAudio`, `startCountdown`, `stopCountdown`, `playSiren`
+- `js/dom.js` — DOM updates; exports `showQuestion`, `showIntro`, `showValidationError`, `showFetchError`, etc.
+- `js/utils.js` — shared helpers; exports `sleep`, `toggleFullscreen`
+- `js/validation.js` — startup validation; exports `validateQuestions`, `validateImages`
 - `questions/questions.json` — production questions; `questions/questions-SAMPLE.json` — test questions
 - `questions/images/` — images referenced in question JSON (paths are relative to `questions/`)
 
@@ -48,15 +52,7 @@ All audio is synthesized via Web Audio API — no audio files. `ensureAudio()` m
 
 ## Question format
 
-```json
-{
-  "question": "Question text?",
-  "a": { "answer": "Answer A", "image": "images/file.jpeg", "funfact": "...", "correct": true },
-  "b": { "answer": "Answer B" }
-}
-```
-
-Exactly one of `a` or `b` must have `"correct": true`. `image` and `funfact` are optional.
+See README.md for the full question format. Validation runs on startup via `validateQuestions()` in `js/validation.js`.
 
 ## Deployment
 

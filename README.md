@@ -50,6 +50,7 @@ Sværdet aktiveres **kun manuelt** — quiz-masteren trykker Space når alle del
 ```json
 [
   {
+    "questionNo": 1,
     "question": "Spørgsmålstekst?",
     "a": {
       "answer": "Svar A",
@@ -65,6 +66,7 @@ Sværdet aktiveres **kun manuelt** — quiz-masteren trykker Space når alle del
 ]
 ```
 
+- `questionNo` skal være et fortløbende heltal startende fra 1 — valideres ved opstart
 - `correct: true` sættes på præcis ét af de to svar
 - `image` er valgfri — sti relativt til `questions/`-mappen
 - `funfact` er valgfri — vises under svaret på den korrekte side efter sværdanimationen
