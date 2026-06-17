@@ -38,7 +38,7 @@ def load_questions(path: str) -> list:
     for i, q in enumerate(questions):
         expected = i + 1
         if q.get("questionNo") != expected:
-            print(f"  FIX   questionNo {q.get('questionNo')} → {expected}")
+            print(f"  FIX   questionNo {q.get('questionNo')} → {expected} ('{q.get('question', ' !! spørgsmål mangler !! ')[:30]}...')")
             q["questionNo"] = expected
             dirty = True
 
@@ -171,6 +171,8 @@ if __name__ == "__main__":
             filename = f"question-{q['questionNo']}{side}"
             path = download_image(filename, img["searchKeywords"])
             if path:
+                if not img.get("path") or img["path"] != path:
+                    print(f"        - FIX path")
                 img["path"] = path
                 ok += 1
             else:
