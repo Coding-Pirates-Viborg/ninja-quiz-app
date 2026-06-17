@@ -473,3 +473,6 @@ function toggleFullscreen() {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+export { validateQuestions, validateImages, init, showQuestion, showElimination, resetSides };
+export const getState = () => state;

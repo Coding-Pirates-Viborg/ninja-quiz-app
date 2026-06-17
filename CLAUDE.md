@@ -2,6 +2,16 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Tests
+
+```bash
+npm test                                          # run all tests once
+npm run test:watch                                # watch mode
+npx vitest run tests/validateQuestions.test.js   # single file
+```
+
+Test files live in `tests/`. The suite uses Vitest + jsdom (no browser needed).
+
 ## Running the app
 
 ```bash
