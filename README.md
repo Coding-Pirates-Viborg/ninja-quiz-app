@@ -12,9 +12,16 @@ python3 -m http.server 8080
 
 Åbn derefter `http://localhost:8080` i browseren.
 
-**Testmode** (bruger `questions-SAMPLE.json`):
+**URL-parametre:**
+
+| Parameter | Effekt |
+|---|---|
+| `?mode=testing` | Nedtælling forkortes til 2 sekunder |
+| `?question=sample` | Bruger `questions-SAMPLE.json` i stedet for `questions.json` |
+
+Kombiner begge for fuld testmode:
 ```
-http://localhost:8080?mode=testing
+http://localhost:8080?mode=testing&question=sample
 ```
 
 ---
@@ -36,7 +43,7 @@ Sværdet aktiveres **kun manuelt** — quiz-masteren trykker Space når alle del
 | Fil | Brug |
 |---|---|
 | `questions/questions.json` | Produktionsspørgsmål |
-| `questions/questions-SAMPLE.json` | Testspørgsmål (`?mode=testing`) |
+| `questions/questions-SAMPLE.json` | Testspørgsmål (`?question=sample`) |
 
 ### Format
 
