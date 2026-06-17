@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Download background images for ninja-quiz-app via Wikimedia Commons (no API key needed).
-Run with: python3 download-images.py
+Run with: python3 prepare-questions.py
 Requires: pip3 install requests
 """
 
@@ -29,8 +29,13 @@ API_DELAY = 2.0
 ALLOWED_MIME = {"image/jpeg", "image/png", "image/webp"}
 
 
+def image_path(q: dict, side: str) -> str:
+    """Return the canonical relative image path for a question side."""
+    return f"{IMAGES_SUBDIR}/question-{q['questionNo']}{side}.jpeg"
+
+
 def load_questions(path: str) -> list:
-    """Load questions.json and repair questionNo if out of sequence."""
+    """Load questions.json, repair questionNo if out of sequence, and warn about stale image paths."""
     with open(path, encoding="utf-8") as f:
         questions = json.load(f)
 
@@ -45,6 +50,34 @@ def load_questions(path: str) -> list:
     if dirty:
         save_questions(path, questions)
         print()
+
+    # Check that existing image paths match the expected filename derived from questionNo + side.
+    stale = []
+    for q in questions:
+        for side in ("a", "b"):
+            img = q.get(side, {}).get("image")
+            if not img or not img.get("path"):
+                continue
+            expected_path = image_path(q, side)
+            if img["path"] != expected_path:
+                stale.append((q["questionNo"], side, img["path"], expected_path, img))
+
+    if stale:
+        print("ADVARSEL: Følgende image paths er ikke i sync med questionNo:")
+        for qno, side, actual, expected_path, _ in stale:
+            print(f"  Q{qno}{side.upper()}  har '{actual}', forventede '{expected_path}'")
+        print()
+        print("Vælg hvad der skal ske:")
+        print("  [a] Auto-korriger — fjern de forkerte paths så scriptet downloader på ny")
+        print("  [s] Stop — rediger questions.json manuelt og kør igen")
+        choice = input("Dit valg [a/s]: ").strip().lower()
+        if choice != "a":
+            print("Afbrudt. Rediger questions.json og kør scriptet igen.")
+            raise SystemExit(1)
+        for _, _, _, _, img in stale:
+            del img["path"]
+        save_questions(path, questions)
+        print("Paths fjernet — scriptet vil downloade de berørte billeder på ny.\n")
 
     return questions
 
@@ -123,16 +156,17 @@ def search_wikimedia(keywords: str) -> str | None:
     return None
 
 
-def download_image(filename: str, keywords: str) -> str | None:
-    """Download image and return relative path on success, None on failure."""
-    filepath = os.path.join(IMAGES_DIR, f"{filename}.jpeg")
+def download_image(rel_path: str, keywords: str) -> str | None:
+    """Download image to IMAGES_DIR and return rel_path on success, None on failure."""
+    basename = os.path.basename(rel_path)
+    filepath = os.path.join(IMAGES_DIR, basename)
     if os.path.exists(filepath):
-        print(f"  SKIP  {filename}.jpeg")
-        return f"{IMAGES_SUBDIR}/{filename}.jpeg"
+        print(f"  SKIP  {basename}")
+        return rel_path
 
     url = search_wikimedia(keywords)
     if not url:
-        print(f"  FAIL  {filename}.jpeg — ingen resultater for '{keywords}'")
+        print(f"  FAIL  {basename} — ingen resultater for '{keywords}'")
         return None
 
     try:
@@ -140,13 +174,13 @@ def download_image(filename: str, keywords: str) -> str | None:
         if r.status_code == 200 and len(r.content) > 5_000:
             with open(filepath, "wb") as f:
                 f.write(r.content)
-            print(f"  OK    {filename}.jpeg ({len(r.content)//1024} KB)")
-            return f"{IMAGES_SUBDIR}/{filename}.jpeg"
+            print(f"  OK    {basename} ({len(r.content)//1024} KB)")
+            return rel_path
         else:
-            print(f"  FAIL  {filename}.jpeg — status {r.status_code}")
+            print(f"  FAIL  {basename} — status {r.status_code}")
             return None
     except Exception as e:
-        print(f"  ERROR {filename}.jpeg — {e}")
+        print(f"  ERROR {basename} — {e}")
         return None
 
 
@@ -168,15 +202,14 @@ if __name__ == "__main__":
             img = q.get(side, {}).get("image")
             if not img or not img.get("searchKeywords"):
                 continue
-            filename = f"question-{q['questionNo']}{side}"
-            path = download_image(filename, img["searchKeywords"])
+            path = download_image(image_path(q, side), img["searchKeywords"])
             if path:
                 if not img.get("path") or img["path"] != path:
                     print(f"        - FIX path")
                 img["path"] = path
                 ok += 1
             else:
-                failed.append((filename, img["searchKeywords"]))
+                failed.append((image_path(q, side), img["searchKeywords"]))
 
     save_questions(QUESTIONS_FILE, questions)
 
