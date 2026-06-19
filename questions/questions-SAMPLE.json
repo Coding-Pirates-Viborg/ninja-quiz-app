@@ -1,18 +1,14 @@
 [
   {
     "questionNo": 1,
-    "question": "Stil dig ved det svar du tror er rigtigt — Hvad er 2 + 2?",
+    "question": "INTRO:: Stil dig på gulvet foran det svar du mener er rigtigt.",
     "a": {
-      "answer": "5",
-      "image": {
-        "searchKeywords": "number five math",
-        "path": "images/SAMPLE-question-1a.jpeg"
-      }
+      "answer": "Det kunne være dette svar!!"
     },
     "b": {
-      "answer": "4",
+      "answer": "MEN - det kunne jo også være dette svar...!",
       "correct": true,
-      "funfact": "2 + 2 er altid 4 (med mindre du bruger ekstremt høje værdier for 2... 🤓)"
+      "funfact": "Alle dem der har valgt det rigtige svar går videre i quiz'en - de andre er ude 😎"
     }
   }
 ]
