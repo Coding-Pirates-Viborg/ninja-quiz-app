@@ -13,6 +13,8 @@ const QUESTIONS_SAMPLE_FILE = 'questions-SAMPLE.json';
 const _params        = new URLSearchParams(window.location.search);
 const isTesting      = _params.get('mode') === 'testing';
 const useSample      = _params.get('question') === 'sample';
+const _startQuestion      = parseInt(_params.get('question'), 10);
+const isQuestionReviewMode = !isNaN(_startQuestion);
 const QUESTIONS_URL  = `questions/${useSample ? QUESTIONS_SAMPLE_FILE : QUESTIONS_FILE}`;
 const IMAGES_BASE    = 'questions/';
 const COUNTDOWN_SEC  = isTesting ? 2 : 15;
@@ -40,7 +42,12 @@ export async function init() {
       return;
     }
     questions = data;
-    showIntro();
+    if (isQuestionReviewMode && _startQuestion >= 1 && _startQuestion <= questions.length) {
+      currentIndex = _startQuestion - 1;
+      runQuestion();
+    } else {
+      showIntro();
+    }
   } catch (err) {
     showFetchError(err);
   }
@@ -213,6 +220,18 @@ function onKey(e) {
   if (e.key === 'r' || e.key === 'R') {
     showIntro();
     return;
+  }
+  if (isQuestionReviewMode) {
+    if (e.key === 'ArrowRight' && currentIndex < questions.length - 1) {
+      currentIndex++;
+      runQuestion();
+      return;
+    }
+    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+      currentIndex--;
+      runQuestion();
+      return;
+    }
   }
   if (e.key === ' ' || e.key === 'Enter') {
     e.preventDefault();
